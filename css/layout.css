@@ -1,0 +1,258 @@
+
+/*slide-down-menu css*/
+nav {
+    padding:10px 0;
+	/*text-align: center;*/ /*hack*/
+    width: 100%;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display: table;
+    width: 100%;
+}
+nav ul li {
+    position:relative;
+	vertical-align: middle;
+	font-family: calibri;
+    display: table-cell;
+    text-align: center;
+}
+
+nav ul li ul li {
+	line-height: 20px;
+	text-align: left;
+}
+.top-level-menu-item {	
+	line-height: 20px;
+}
+
+/* sub navigation */
+
+nav li ul {    
+    background-color:rgb(0, 137, 96);
+    position:absolute;
+    /*left:0;*/
+    left: 22.5%; /*Divide 100% by number of menu items. This will approximate the value for the left property; tweak from there*/
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {    
+	color: rgb(231, 233, 252);
+	font-size: 14pt;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:rgb(36, 195, 147);
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px rgb(0, 79, 55);
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+ul.sub-menu li a{
+	text-align: left;
+}
+
+nav li a {
+	text-align: center;
+	/*line-height: 20px;*/
+	display: inline-block;
+}
+
+.dark-blue {
+	background-color:rgb(0,37,78)
+}
+
+#container {
+	width: 75%;
+	margin: auto;
+}
+
+h1, h2, h3{
+	text-align: center;
+	font-family: arial;
+}
+
+h1 {
+	font-size: 36pt;
+	margin: 0;
+}
+
+h1 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+section {
+	width: 60%;
+	margin-top: 10px;
+}
+
+header {
+	margin-top: 10px;
+	font-size: 20pt;
+	color: rgb(0, 64, 135);
+}
+
+.sub-header {
+	font-size: 16pt;
+	margin: 0px;
+}
+
+.main-content {
+	display: inline-block;
+}
+
+.main-content section {
+	float: left;
+}
+
+.main-content figure {
+	float: right;
+	margin-right: 0px;
+}
+
+.phone-number {
+	font-family: arial;
+	font-size: 28pt;
+	font-weight: 600;
+	text-align: right;
+	color: rgb(48, 117, 193);
+	text-shadow: 2px 1px 0 #ccc,
+			   2px 1px 0 #c9c9c9,
+			   2px 2px 0 #bbb,
+			   2px 3px 0 #b9b9b9,
+			   2px 4px 0 #aaa,
+			   2px 5px 1px rgba(0,0,0,.1),
+			   2px 2px 5px rgba(0,0,0,.1),
+			   2px 1px 3px rgba(0,0,0,.3),
+			   2px 3px 5px rgba(0,0,0,.2),
+			   2px 5px 10px rgba(0,0,0,.25)
+}
+
+#phone-sub-text {
+	font-family: arial;
+	text-align: right;
+}
+
+.menu-hr {
+	/*display: block;*/
+	height: 4px;
+	border-bottom: 4px solid rgb(36, 195, 147);
+	border-top: 0px;
+	margin: 0px;
+}
+
+#social-media {
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+
+#social-media img {
+	height: 38px;
+	width: 125px;
+	margin: 10px 5px;
+}
+
+#fb-icon {
+	height: 52px;
+	width: 52px;
+}
+
+.container-footer {
+	height: 50px;
+	background-color: rgb(0, 137, 96);
+	margin-top: 40px;
+}
+
+.footer-nav-left {
+}
+
+.footer-nav-left li  {
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: rgb(0, 37, 78);
+}
+
+.footer-nav-left ul {
+    vertical-align: middle;
+}
+
+.footer-nav-left li a {
+    height: 24px;
+    vertical-align: inherit;
+    width: auto;
+    font-size: 9pt;
+    font-weight: 600;
+    line-height: normal;
+    display: inline;
+    padding-bottom: 2px; /*Account for phantom link underline*/
+}
+
+.copyright {
+    color: rgb(231, 233, 252);
+    font-family: Arial;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+    width: inherit;
+}
+
+.float-nav-bar {
+    height: 75px;
+    width: auto;
+}
+
+#nav-bar-placeholder {
+    display: none;
+}
