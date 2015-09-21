@@ -1,6 +1,8 @@
 "use strict";
 $(document).ready(function () {
     $('#main').load('home.html');
+    
+    console.log("detox-services left: " + $('#detox-services').position().left);
 
     var topOfNav = $('#float-nav-bar').offset().top;
 
@@ -18,7 +20,19 @@ $(document).ready(function () {
 
     $('.dropdown').hover(
         function () {
-            $(this).children('.sub-menu').slideDown(200);
+            var parentLiWidth = $(this).outerWidth(true);
+            
+            console.log("detox-services width: " + parseInt($('#detox-services').width()));
+            
+            var offset = $('#detox-services').outerWidth(true) - parseInt($('#detox-services').width());
+            
+            console.log("li width: " + parentLiWidth - parseInt($('#detox-services').width()) );
+            var subMenuLeft = parseFloat($('#detox-services').css('margin-left').replace("px", "")) + parseFloat($('#detox-services').css('padding-left').replace("px", ""));
+            
+            $(this).children('.sub-menu').slideDown(200).css('left', offset);
+            
+            //$("#mydiv").css({top: 200, left: 200, position:'absolute'});
+            
         },
         function () {
             $(this).children('.sub-menu').slideUp(200);
