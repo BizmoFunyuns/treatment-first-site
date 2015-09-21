@@ -1,8 +1,6 @@
 "use strict";
 $(document).ready(function () {
     $('#main').load('home.html');
-    
-    console.log("detox-services left: " + $('#detox-services').position().left);
 
     var topOfNav = $('#float-nav-bar').offset().top;
 
@@ -17,17 +15,34 @@ $(document).ready(function () {
             $('#float-nav-bar').removeClass('fixed');
         }
     });
+    
+    $(window).resize( function() {
+        console.log("resizing");
+    });
 
     $('.dropdown').hover(
         function () {
-            var parentLiWidth = $(this).outerWidth(true);
+            var parentLiWidth           = $(this).outerWidth(true);
+            var detoxServLeft           = $('#detox-services').position().left;
+            var parentLiDropdownLeft    = $(this).position().left;
+            var parentLiDropdownWidth   = $(this).width();
+            //var offset = (parentLiDropdownWidth - $('#detox-services').width()) / 2 - parseFloat($('#detox-services').css('margin-left')
+            //                             .replace("px", ""));
             
-            console.log("detox-services width: " + parseInt($('#detox-services').width()));
+            var offset = (parentLiDropdownWidth - $(this).children('a').width()) / 2 - parseFloat($(this).children('a').css('margin-left')
+                                         .replace("px", ""));
             
-            var offset = $('#detox-services').outerWidth(true) - parseInt($('#detox-services').width());
+            $(this).children('a').width()
             
-            console.log("li width: " + parentLiWidth - parseInt($('#detox-services').width()) );
-            var subMenuLeft = parseFloat($('#detox-services').css('margin-left').replace("px", "")) + parseFloat($('#detox-services').css('padding-left').replace("px", ""));
+            //console.log("foo: " + foo);
+            
+            //console.log("detoxServicesLeft: " + detoxServLeft);
+            
+            //console.log("detox-services width: " + parseInt($('#detox-services').width()));
+            
+            //var offset = $('#detox-services').outerWidth(true) - parseInt($('#detox-services').width());
+            
+            //var subMenuLeft = parseFloat($('#detox-services').css('margin-left').replace("px", "")) + parseFloat($('#detox-services').css('padding-left').replace("px", ""));
             
             $(this).children('.sub-menu').slideDown(200).css('left', offset);
             
