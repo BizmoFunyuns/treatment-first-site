@@ -24,12 +24,19 @@ $(document).ready(function () {
         resizeMenu();
     });
 
-    $('.dropdown').hover(
-        function () {
-            var parentLiDropdownWidth = $(this).width();
+    $('.dropdown').hover( function () {
+            var parentLiDropdownWidth   = $(this).width();
+            var menuLinkWidth           = $(this).children('a').width();
+            var menuLinkProps = {
+                width:      $(this).children('a').width(),
+                marginLeft: parseFloat($(this).children('a').css('margin-left').replace("px", ""))
+            }
+                         
             
-            var offset = (parentLiDropdownWidth - $(this).children('a').width()) / 2 - parseFloat($(this).children('a').css('margin-left')
-                                         .replace("px", ""));
+            //var offset = (parentLiDropdownWidth - menuLinkWidth) / 2 - parseFloat($(this).children('a').css('margin-left')
+            //                             .replace("px", ""));
+                         
+            var offset = (parentLiDropdownWidth - menuLinkProps.width) / 2 - menuLinkProps.marginLeft;
 
             $(this).children('.sub-menu').slideDown(200).css('left', offset);
             
