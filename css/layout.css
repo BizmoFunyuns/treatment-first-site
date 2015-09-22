@@ -268,3 +268,12 @@ header {
 #nav-bar-placeholder {
     display: none;
 }
+
+.phone {
+    background-image:url('../img/phone.png');
+    background-size: contain;
+    height: 27px;
+    width: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}

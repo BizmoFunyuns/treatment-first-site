@@ -1,6 +1,6 @@
 "use strict";
 var resizeMenu = function () {
-        $('#float-nav-bar').addClass('fixed').css("width", $("#container").css("width"));
+        $('#float-nav-bar').css("width", $("#container").css("width"));
     };
 
 $(document).ready(function () {
@@ -11,6 +11,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > topOfNav) {
             $('#nav-bar-placeholder').show();
+            $('#float-nav-bar').addClass('fixed');
             
             resizeMenu();
         }
