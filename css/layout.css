@@ -1,3 +1,4 @@
+* {box-sizing: border-box;}
 
 /*slide-down-menu css*/
 nav {
@@ -117,7 +118,8 @@ nav li a {
 }
 
 .main-menu {
-	background-color:rgb(0,37,78);
+/*	background-color:rgb(0,37,78);*/
+    background-color: rgb(61, 22, 102);
     min-height: 42px;
 }
 
@@ -276,4 +278,48 @@ header {
     width: 30px;
     display: inline-block;
     background-repeat: no-repeat;
+}
+
+#three-panel {
+    margin-top: 40px;
+}
+
+.three-panel {
+    display: table;
+    width: 100%;
+}
+
+.three-panel-section-container {
+/*    width: 33.3%;*/
+    display: table-cell;
+    /*background-color: #ff0000;*/
+}
+
+.container-left {
+/*    display: table-cell;*/
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.container-center {
+/*    display: table-cell;*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-right {
+/*    display: table-cell;*/
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.three-panel-section {
+/*    display: table;*/
+    background-color: #ff0000;
+    /*width: 33%;*/
+    height: 200px;
+}
+
+.three-panel-section-image {
+    background-color: #ff0000;   
 }
