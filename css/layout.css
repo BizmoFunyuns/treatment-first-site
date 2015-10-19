@@ -355,6 +355,31 @@ header {
 
 /*Just for visualization; probably remove*/
 .three-panel-section-test div {
-    background-color: #ff0000;
+    background-color: #694292;
     height: 200px;
+}
+
+#communication-info {
+    background-color: #3D1666;
+    display: inline-block;
+    padding: 10px;
+}
+
+.communication-info-textbox {
+    display: block;
+    height: 42px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: calibri;
+    font-size: 14pt;
+}
+
+#communication-info-send {
+    background: #8968AD;
+    border: none;
+}
+
+#communication-info-send:hover {
+    background: #684292;
 }
