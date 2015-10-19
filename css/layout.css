@@ -383,3 +383,7 @@ header {
 #communication-info-send:hover {
     background: #684292;
 }
+
+#communication-info-container {
+    text-align: right;
+}
