@@ -109,7 +109,7 @@ nav.main-menu  li li.dropdown > a {
     background-repeat:no-repeat;
 }
 
-nav.main-menu  li.dropdown > a.single-line {
+nav.main-menu li.dropdown > a.single-line {
     background-position:right 10px;
 }
 
@@ -125,11 +125,11 @@ nav.main-menu ul.sub-menu li a{
     line-height: 40px;
 }
 
-nav.main-menu  li a {
+nav.main-menu li a {
 	text-align: center;
 	line-height: 20px;
 	display: inline-block;
-    max-width: 160px;
+/*    max-width: 160px;*/
 }
 
 
