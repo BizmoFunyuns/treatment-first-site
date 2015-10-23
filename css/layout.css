@@ -1,12 +1,22 @@
 * {box-sizing: border-box;}
 
+body {
+    font-family: calibri;
+}
+
+.main-menu {
+/*	background-color:rgb(0,37,78);*/
+    background-color: #3D1666;
+    min-height: 42px;
+}
+
 /*slide-down-menu css*/
-nav {
+nav.main-menu {
     padding:10px 0;
 	/*text-align: center;*/ /*hack*/
     width: 100%;
 }
-nav ul {
+nav.main-menu  ul {
     list-style-type:none;
     margin:0;
     padding:0;
@@ -14,7 +24,7 @@ nav ul {
     width: 100%;
     height: 40px;
 }
-nav ul li {
+nav.main-menu  ul li {
     position:relative;
 	vertical-align: middle;
 	font-family: calibri;
@@ -23,17 +33,18 @@ nav ul li {
     max-width: 100px;
 }
 
-nav ul li ul li {
+nav.main-menu  ul li ul li {
 	line-height: 20px;
 	text-align: left;
 }
+
 .top-level-menu-item {	
 	line-height: 20px;
 }
 
 /* sub navigation */
 
-nav li ul {    
+nav.main-menu  li ul {    
     background-color:rgb(0, 137, 96);
     position:absolute;
     /*left:0;*/
@@ -41,12 +52,12 @@ nav li ul {
     top:40px; /* make this equal to the line-height of the links (specified below) */
     width:200px;
 }
-nav li li {
+nav.main-menu  li li {
     position:relative;
     margin:0;
     display:block;
 }
-nav li li ul {
+nav.main-menu  li li ul {
     position:absolute;
     top:0;
     left:200px; /* make this equal to the width of the sub nav above */
@@ -54,73 +65,84 @@ nav li li ul {
 }
 
 /* style all links */
-nav a {
+nav.main-menu  a {
     line-height:40px;
     padding:0 12px;
     margin:0 12px;
 }
-nav a {    
+nav.main-menu  a {    
 	color: rgb(231, 233, 252);
 	font-size: 14pt;
     text-decoration:none;
     display:block;
 }
-nav a:hover,
-nav a:focus,
-nav a:active {
+nav.main-menu  a:hover,
+nav.main-menu  a:focus,
+nav.main-menu  a:active {
     color:rgb(36, 195, 147);
 }
 
 /* style sub level links */
-nav li li a {
+nav.main-menu  li li a {
     border-bottom:solid 1px rgb(0, 79, 55);
     margin:0 10px;
     padding:0;
 }
-nav li li:last-child a {
+nav.main-menu  li li:last-child a {
     border-bottom:none;
 }
 
 /* show arrows for dropdowns */
-nav li.dropdown > a {
+nav.main-menu  li.dropdown > a {
     background-image:url('../img/arrow-down.png');
     background-position:right 20px;
     background-repeat:no-repeat;
 }
 
-nav li li.dropdown > a {
+nav.main-menu  li li.dropdown > a {
     background-image:url('../img/arrow-right.png');
     background-position:right 16px;
     background-repeat:no-repeat;
 }
 
-nav li.dropdown > a.single-line {
+nav.main-menu  li.dropdown > a.single-line {
     background-position:right 10px;
 }
 
 /* hide sub menu links */
-ul.sub-menu {
+nav.main-menu ul.sub-menu {
     display:none;
     height: auto;
 }
 
-ul.sub-menu li a{
+nav.main-menu ul.sub-menu li a{
 	text-align: left;
     width: 160px;
     line-height: 40px;
 }
 
-nav li a {
+nav.main-menu  li a {
 	text-align: center;
 	line-height: 20px;
 	display: inline-block;
     max-width: 160px;
 }
 
-.main-menu {
-/*	background-color:rgb(0,37,78);*/
-    background-color: #3D1666;
-    min-height: 42px;
+
+
+nav.footer-nav ul {
+    display: block;
+}
+
+nav.footer-nav ul {
+    list-style-type: none;
+}
+
+nav.footer-nav a {
+    color: #694292;
+	font-size: 14pt;
+    text-decoration:none;
+    display:block;
 }
 
 #container {
