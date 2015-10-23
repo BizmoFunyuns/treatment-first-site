@@ -4,6 +4,10 @@ body {
     font-family: calibri;
 }
 
+p {
+    color: #666666;
+}
+
 .main-menu {
 /*	background-color:rgb(0,37,78);*/
     background-color: #3D1666;
@@ -304,6 +308,7 @@ header {
 
 #three-panel {
     margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .three-panel {
@@ -354,6 +359,12 @@ header {
 .three-panel-section-test {
     width: 33.33%;
     float: left;
+}
+
+.three-panel-section-test h4 {
+    font-size: 16pt;
+    color: #52287F;
+    margin: 0 18px;
 }
 
 .three-panel-section-test-left {
