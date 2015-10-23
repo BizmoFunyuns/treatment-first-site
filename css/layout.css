@@ -170,7 +170,7 @@ h1 a {
 }
 
 section {
-	width: 60%;
+	width: 100%;
 	margin-top: 10px;
 }
 
@@ -186,7 +186,13 @@ header {
 }
 
 .main-content {
-	display: inline-block;
+/*	display: inline-block;*/
+    width: 100%;
+}
+
+.main-content p {
+    width: 60%;
+    display: inline-block;
 }
 
 .main-content section {
@@ -307,7 +313,7 @@ header {
 }
 
 #three-panel {
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 60px;
 }
 
