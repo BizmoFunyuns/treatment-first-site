@@ -1,6 +1,7 @@
 /*global $, jQuery, alert*/
 (function () {
     "use strict";
+    
     var resizeMenu = function () {
             $('#float-nav-bar').css("width", $("#container").css("width"));
         };

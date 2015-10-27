@@ -172,7 +172,7 @@ h1 a {
 
 section {
 	width: 100%;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 
 header {
@@ -186,21 +186,21 @@ header {
 	margin: 0px;
 }
 
-.main-content {
+.intro-content {
 /*	display: inline-block;*/
     width: 100%;
 }
 
-.main-content p {
+.intro-content p {
     width: 60%;
     display: inline-block;
 }
 
-.main-content section {
+.intro-content section {
 	float: left;
 }
 
-.main-content figure {
+.intro-content figure {
 	float: right;
 	margin-right: 0px;
 }
@@ -356,13 +356,21 @@ header {
 }
 
 .three-panel-section-image {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .three-panel-section-qual-of-life {
-    display: block;
     background-image: url('../img/quality-of-life.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+.three-panel-section-treatment {
+    background-image: url('../img/treatment.png');
+}
+
+.three-panel-section-friends-family {
+    background-image: url('../img/family-ties.png');
 }
 
 .three-panel-section-title {
