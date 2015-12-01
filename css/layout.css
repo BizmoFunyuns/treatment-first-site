@@ -150,7 +150,7 @@ nav.footer-nav a {
     display:block;
 }
 
-#container {
+.container {
 	width: 75%;
 	margin: auto;
 }
@@ -210,7 +210,7 @@ header {
 	font-size: 28pt;
 	font-weight: 600;
 	text-align: right;
-	color: rgb(48, 117, 193);
+	color: #004087;
 	text-shadow: 2px 1px 0 #ccc,
 			   2px 1px 0 #c9c9c9,
 			   2px 2px 0 #bbb,
@@ -313,9 +313,16 @@ header {
     background-repeat: no-repeat;
 }
 
+/*
 #three-panel {
     margin-top: 80px;
     margin-bottom: 60px;
+}
+*/
+
+.three-panel-container {
+    display: block;
+    margin: 80px 0;
 }
 
 .three-panel {
@@ -440,4 +447,24 @@ header {
 
 #communication-info-container {
     text-align: right;
+}
+
+#insuranceVerification {
+    display: block;
+    width: 75%;
+    height: 175px;
+    background: #8968AD;
+    margin: 20px auto 80px;
+}
+
+#mainContentQuote {
+    display: block;
+    width: 100%;
+    height: 250px;
+    background: #684292;
+    margin: 20px auto 80px;
+}
+
+.own-page {
+    /*empty class for filtering*/
 }
