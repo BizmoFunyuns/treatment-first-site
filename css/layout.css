@@ -205,7 +205,7 @@ header {
 	margin-right: 0px;
 }
 
-.phone-number {
+.phone-number, .top-content {
 	font-family: arial;
 	font-size: 28pt;
 	font-weight: 600;
@@ -467,4 +467,13 @@ header {
 
 .own-page {
     /*empty class for filtering*/
+}
+
+.left {
+    float: left;
+}
+
+.middle {
+    margin: auto;
+    text-align: center;
 }
