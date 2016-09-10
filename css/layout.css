@@ -228,6 +228,22 @@ header {
 	text-align: right;
 }
 
+.title {
+    font-family: lora, serif;
+	font-size: 40pt;
+	font-weight: 200;
+	text-align: left;
+	color: #004087;
+}
+
+.subtitle {
+    font-family: arial;
+	font-size: 20pt;
+	font-weight: 600;
+	text-align: left;
+	color: #004087;
+}
+
 .menu-hr {
 	/*display: block;*/
 	height: 4px;
