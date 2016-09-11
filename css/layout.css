@@ -176,14 +176,24 @@ section {
 }
 
 header {
-	margin-top: 10px;
+/*	margin-top: 10px;*/
 	font-size: 20pt;
 	color: rgb(0, 64, 135);
+}
+
+header.page-main-header {
+    font-size: 28pt;
+/*    margin-bottom: 20px;*/
 }
 
 .sub-header {
 	font-size: 16pt;
 	margin: 0px;
+}
+
+.sub-header-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .intro-content {
@@ -431,10 +441,12 @@ header {
 }
 
 /*Just for visualization; probably remove*/
+/*
 .three-panel-section-test div {
     background-color: #694292;
     height: 200px;
 }
+*/
 
 #communication-info {
     background-color: #3D1666;
@@ -473,10 +485,11 @@ header {
     margin: 20px auto 80px;
 }
 
-#mainContentQuote {
-    display: block;
-    width: 100%;
-    height: 250px;
+#insurancePanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
     background: #684292;
     margin: 20px auto 80px;
 }
@@ -491,5 +504,18 @@ header {
 
 .middle {
     margin: auto;
+    text-align: center;
+}
+
+.contact-us-textbox {
+    display: table-cell;
+    
+    height: 3em;
+    width: 200px;
+    margin: 8px;
+}
+
+.contact-us-container {
+    display: table;
     text-align: center;
 }
