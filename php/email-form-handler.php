@@ -23,9 +23,9 @@ $email_address))
 if( empty($errors))
 {
 	$to = $myemail; 
-	$email_subject = "Contact Us Form Submission: $firstName + $lastName";
+	$email_subject = "Contact Us Form Submission: $firstName $lastName";
 	$email_body = "You have received a new message. ".
-	" Here are the details:\n Name: $firstName + $lastName \n Email: $email_address"; 
+	" Here are the details:\n Name: $firstName $lastName \n Email: $email_address"; 
 	
 	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $email_address";
