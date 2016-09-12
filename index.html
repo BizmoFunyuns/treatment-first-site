@@ -174,12 +174,15 @@
 
             <aside class="three-panel-section-test three-panel-section-test-right">
                 <h4>Contact Us</h4>
-                <div class="contact-us-container">
-                    <input class="contact-us-textbox" type=text placeholder="First Name">
-                    <input class="contact-us-textbox" type=text placeholder="Last Name">
-                    <input class="contact-us-textbox" type=email placeholder="Email">
-                    <input class="contact-us-textbox" type="submit" value="Submit">
-                </div>
+                <form id="contactUs" action="php/email-form-handler.php" method="post">
+                    <div class="contact-us-container">
+                        <input class="contact-us-textbox" type=text placeholder="First Name" name="firstName">
+                        <input class="contact-us-textbox" type=text placeholder="Last Name" name="lastName">
+                        <input class="contact-us-textbox" type=email placeholder="Email" name="emailAddress">
+                        <input class="contact-us-textbox" type=email placeholder="Phone Number" name="phoneNumber">
+                        <input class="contact-us-textbox" type="submit" value="Submit">
+                    </div>
+                </form>
             </aside>
         </div>
 		
