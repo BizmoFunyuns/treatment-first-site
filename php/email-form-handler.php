@@ -20,6 +20,8 @@ $email_address))
     $errors .= "\n Error: Invalid email address";
 }
 
+echo $myemail;
+
 if( empty($errors))
 {
 	$to = $myemail; 
