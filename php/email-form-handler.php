@@ -25,7 +25,7 @@ echo $myemail;
 if( empty($errors))
 {
 	$to = $myemail; 
-	$email_subject = "Contact Us Form Submission: $firstName $lastName";
+	$email_subject = "Contact Us Submission From drugandalcoholaddictionservices.com: $firstName $lastName";
 	$email_body = "You have received a new message. ".
 	" Here are the details:\n Name: $firstName $lastName \n Email: $email_address"; 
 	
