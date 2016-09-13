@@ -1,6 +1,6 @@
 <?php 
 $errors = '';
-$myemail = 'gmarkjunk@yahoo.com';//<-----Put Your email address here.
+$myemail = 'apresto@mac.com';//<-----Put Your email address here.
 if(empty($_POST['firstName'])  || 
    empty($_POST['emailAddress']) || 
    empty($_POST['lastName']))
@@ -10,7 +10,8 @@ if(empty($_POST['firstName'])  ||
 
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
-$email_address = $_POST['emailAddress']; 
+$email_address = $_POST['emailAddress'];
+$phoneNumber = $_POST['phoneNumber'];
 //$message = $_POST['message']; 
 
 if (!preg_match(
@@ -27,7 +28,7 @@ if( empty($errors))
 	$to = $myemail; 
 	$email_subject = "Contact Us Submission From drugandalcoholaddictionservices.com: $firstName $lastName";
 	$email_body = "You have received a new message. ".
-	" Here are the details:\n Name: $firstName $lastName \n Email: $email_address"; 
+	" Here are the details:\n Name: $firstName $lastName \n Email: $email_address \n Phone Number: $phoneNumber"; 
 	
 //    $headers = array("From: $to", "Reply-To: $email_address");
 //    $headers = implode("\r\n", $headers);
