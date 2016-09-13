@@ -31,6 +31,10 @@ if( empty($errors))
 	
 	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $email_address";
+    
+    echo $to;
+    echo $email_subject;
+    echo $email_body;
 	
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
