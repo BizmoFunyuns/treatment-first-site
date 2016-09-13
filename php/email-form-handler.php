@@ -36,7 +36,9 @@ if( empty($errors))
     echo $email_subject;
     echo $email_body;
 	
-	mail($to,$email_subject,$email_body,$headers);
+	$mail_response = mail($to,$email_subject,$email_body,$headers);
+    
+    echo $mail_response;
 	//redirect to the 'thank you' page
 	//header('Location: contact-form-thank-you.html');
 } 
