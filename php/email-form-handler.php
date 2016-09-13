@@ -31,8 +31,8 @@ if( empty($errors))
 	
 //    $headers = array("From: $myemail", "Reply-To: $email_address");
 //    $headers = implode("\r\n", $headers);
-	$headers = "From: $myemail"; 
-//	$headers .= "Reply-To: $email_address";
+//	$headers = "From: $myemail"; 
+	$headers = "Reply-To: $email_address";
     
     echo $to;
     echo $email_subject;
