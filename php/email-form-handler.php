@@ -29,9 +29,9 @@ if( empty($errors))
 	$email_body = "You have received a new message. ".
 	" Here are the details:\n Name: $firstName $lastName \n Email: $email_address"; 
 	
-    $headers = array("From: $myemail", "Reply-To: $email_address");
-    $headers = implode("\r\n", $headers);
-//	$headers = "From: $myemail"; 
+//    $headers = array("From: $myemail", "Reply-To: $email_address");
+//    $headers = implode("\r\n", $headers);
+	$headers = "From: $myemail"; 
 //	$headers .= "Reply-To: $email_address";
     
     echo $to;
