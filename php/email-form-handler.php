@@ -30,11 +30,12 @@ if( empty($errors))
 	" Here are the details:\n Name: $firstName $lastName \n Email: $email_address"; 
 	
 	$headers = "From: $myemail\n"; 
-	$headers = "Reply-To: $email_address";
+	$headers .= "Reply-To: $email_address";
     
     echo $to;
     echo $email_subject;
     echo $email_body;
+    echo $headers;
 	
 	$mail_response = mail($to,$email_subject,$email_body,$headers);
     
