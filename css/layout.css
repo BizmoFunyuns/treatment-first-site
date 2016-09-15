@@ -11,7 +11,7 @@ p {
 .main-menu {
 /*	background-color:rgb(0,37,78);*/
 /*    background-color: #3D1666;*/
-    background-color: #52287f;
+    background-color: #00326b;
     min-height: 42px;
 }
 
@@ -144,7 +144,7 @@ nav.footer-nav ul {
 }
 
 nav.footer-nav a {
-    color: #694292;
+    color: #004FA7;
 	font-size: 14pt;
     text-decoration:none;
     display:block;
@@ -417,7 +417,7 @@ header.page-main-header {
 
 .three-panel-section-test h4 {
     font-size: 16pt;
-    color: #52287F;
+    color: #004087;
     margin: 0 18px;
 }
 
@@ -490,7 +490,7 @@ header.page-main-header {
     justify-content: center;
     align-items: center;
     width: 75%;
-    background: #684292;
+    background: #00326b;
     margin: 20px auto 80px;
 }
 
@@ -508,11 +508,26 @@ header.page-main-header {
 }
 
 .contact-us-textbox {
-    display: table-cell;
     
-    height: 3em;
-    width: 200px;
+}
+
+.contact-us-input {
+    display: table-cell;    
+/*    height: 3em;*/
+    height: 40px;
+    width: 300px;
     margin: 8px;
+    font-size: 12pt;
+    border-radius: 4px;
+    border-style: solid;
+}
+
+.contact-us-button {
+    background: #CFA000;
+    height: 50px;
+    border: none;
+    font-size: 14pt;
+    color: #E7E9FC;
 }
 
 .contact-us-container {
