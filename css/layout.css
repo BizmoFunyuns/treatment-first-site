@@ -151,7 +151,7 @@ nav.footer-nav a {
 }
 
 .container {
-	width: 75%;
+/*	width: 75%;*/
 	margin: auto;
 }
 
@@ -279,6 +279,10 @@ header.page-main-header {
 	width: 52px;
 }
 
+footer {
+    background-image: url("../img/crossword.png");
+}
+
 .container-footer {
 	height: 50px;
 	background-color: #3D1666;
@@ -379,6 +383,18 @@ header.page-main-header {
 /*    display: table-cell;*/
     padding-left: 20px;
     padding-right: 0px;
+}
+
+.two-panel-section-test {
+    width: 50%;
+    float: left;
+}
+
+.two-panel-section-test h4 {
+    font-size: 16pt;
+    color: #004087;
+    margin: 0 18px;
+    text-align: center;
 }
 
 .three-panel-section {
@@ -522,6 +538,13 @@ header.page-main-header {
     border-style: solid;
 }
 
+.contact-us-message {
+    height: 70px;
+    resize: none;
+    font-family: "calibri";
+    font-size: 13pt;
+}
+
 .contact-us-button {
     background: #CFA000;
     height: 50px;
@@ -533,4 +556,8 @@ header.page-main-header {
 .contact-us-container {
     display: table;
     text-align: center;
+}
+
+#home-first-content {
+    background-image: url(../img/agsquare_light-blue.png);
 }
