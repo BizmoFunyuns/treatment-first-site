@@ -151,7 +151,7 @@ nav.footer-nav a {
 }
 
 .container {
-/*	width: 75%;*/
+	width: 98%;
 	margin: auto;
 }
 
@@ -397,6 +397,11 @@ footer {
     text-align: center;
 }
 
+.two-panel-section-test p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .three-panel-section {
 /*    display: table;*/
     background-color: #ff0000;
@@ -559,5 +564,35 @@ footer {
 }
 
 #home-first-content {
-    background-image: url(../img/agsquare_light-blue.png);
+/*    background-image: url(../img/agsquare_light-blue.png);*/
+}
+
+.general-page-paragraph {
+    font-size: 14pt;    
+    font-family: calibri;
+}
+
+.general-page-content {
+    width: 50%;
+}
+
+.general-page-header {
+    font-size: 28pt;
+    margin-top: 30px;
+    font-family: lora, serif;
+}
+
+.link-button-services {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 10px;
+/*    border: 1px solid;*/
+    border: none;
+    font-family: calibri;
+    font-size: 12pt;
+    text-decoration: none;
+    background: #CFA000;
+    color: #E7E9FC;
+    border-radius: 4px;
+    line-height: 50px;
 }
