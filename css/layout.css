@@ -577,9 +577,12 @@ footer {
 }
 
 .general-page-header {
-    font-size: 28pt;
-    margin-top: 30px;
-    font-family: lora, serif;
+    margin: 30px 0;
+}
+
+.title h4 {
+    font-size: 16pt;
+    font-family: calibri;
 }
 
 .link-button-services {
@@ -595,4 +598,9 @@ footer {
     color: #E7E9FC;
     border-radius: 4px;
     line-height: 50px;
+}
+
+.general-page-title {
+    font-family: lora, serif;
+    
 }
