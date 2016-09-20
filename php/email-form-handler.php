@@ -1,15 +1,13 @@
 <?php 
 $errors = '';
 $myemail = 'apresto@mac.com';//<-----Put Your email address here.
-if(empty($_POST['firstName'])  || 
-   empty($_POST['emailAddress']) || 
-   empty($_POST['lastName']))
+if(empty($_POST['name'])  || 
+   empty($_POST['emailAddress']))
 {
     $errors .= "\n Error: all fields are required";
 }
 
-$firstName = $_POST['firstName'];
-$lastName = $_POST['lastName'];
+$name = $_POST['name'];
 $email_address = $_POST['emailAddress'];
 $phoneNumber = $_POST['phoneNumber'];
 //$message = $_POST['message']; 
@@ -28,7 +26,7 @@ if( empty($errors))
 	$to = $myemail; 
 	$email_subject = "Contact Us Submission From drugandalcoholaddictionservices.com: $firstName $lastName";
 	$email_body = "You have received a new message. ".
-	" Here are the details:\n Name: $firstName $lastName \n Email: $email_address \n Phone Number: $phoneNumber"; 
+	" Here are the details:\n Name: $name \n Email: $email_address \n Phone Number: $phoneNumber"; 
 	
 //    $headers = array("From: $to", "Reply-To: $email_address");
 //    $headers = implode("\r\n", $headers);

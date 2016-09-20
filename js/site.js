@@ -43,11 +43,11 @@
                 $(this).children('.sub-menu').slideUp(200);
             });
 
-        $('li a, h1 a').not('.own-page').on('click', function (e) {
-            e.preventDefault();
-            var page = $(this).attr('href');
-            $('#main').load(page);
-        });
+//        $('li a, h1 a, a').not('.own-page').on('click', function (e) {
+//            e.preventDefault();
+//            var page = $(this).attr('href');
+//            $('#main').load(page);
+//        });
     });
 }());
 
