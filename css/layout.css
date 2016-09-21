@@ -604,3 +604,9 @@ footer {
     font-family: lora, serif;
     
 }
+
+.general-ul {
+    font-family: calibri;
+    font-size: 14pt;
+    color: #004087;
+}
