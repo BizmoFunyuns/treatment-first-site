@@ -506,7 +506,7 @@ footer {
     margin: 20px auto 80px;
 }
 
-#insurancePanel {
+.insurance-panel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -608,5 +608,5 @@ footer {
 .general-ul {
     font-family: calibri;
     font-size: 14pt;
-    color: #004087;
+    color: #666;
 }
