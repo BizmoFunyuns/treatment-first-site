@@ -50,7 +50,7 @@ nav.main-menu ul li ul li {
 /* sub navigation */
 
 nav.main-menu  li ul {    
-    background-color:rgb(0, 137, 96);
+    background-color: #004FA7;
     position:absolute;
     /*left:0;*/
     /*left: 18%; /*Divide 100% by number of menu items. This will approximate the value for the left property; tweak from there*/
@@ -84,12 +84,12 @@ nav.main-menu  a {
 nav.main-menu  a:hover,
 nav.main-menu  a:focus,
 nav.main-menu  a:active {
-    color:rgb(36, 195, 147);
+    color: #017FFB;
 }
 
 /* style sub level links */
-nav.main-menu  li li a {
-    border-bottom:solid 1px rgb(0, 79, 55);
+nav.main-menu li li a {
+    border-bottom:solid 1px #016FEB;
     margin:0 10px;
     padding:0;
 }
@@ -257,7 +257,7 @@ header.page-main-header {
 .menu-hr {
 	/*display: block;*/
 	height: 4px;
-	border-bottom: 4px solid rgb(36, 195, 147);
+	border-bottom: 4px solid #016FEB;
 	border-top: 0px;
 	margin: 0px;
 }
