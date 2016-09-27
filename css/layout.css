@@ -564,6 +564,11 @@ footer {
     text-align: center;
 }
 
+.contact-us-container-left {
+    display: table;
+    text-align: left;
+}
+
 #home-first-content {
 /*    background-image: url(../img/agsquare_light-blue.png);*/
 }
