@@ -50,11 +50,6 @@
         
         $('.dropdown .second-level').hover(function () {
             var offset = $(this).parents('ul').width();
-            
-//            console.log("other function");
-//            console.log("parentLiDropdownWidth: " + parentLiDropdownWidth);
-//            console.log("menuLinkWidth: " + menuLinkWidth);
-//            console.log("offset: " + offset);
 
             $(this).children('.sub-menu').slideDown(200).css('left', offset - 6);
 
