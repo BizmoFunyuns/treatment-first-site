@@ -6,4 +6,3 @@
      "keywords": "drug alcohol rehab rehabilitation",
      "text": "Whether you are the one seeking help, or a friend or family member seeking help for a loved one, we’re here to assist you. Our goal is to make your rehabilitation planning process as stress free as possible. Relax, let us take care of the details."
 }
-

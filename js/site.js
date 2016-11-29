@@ -35,8 +35,28 @@
                     marginLeft: parseFloat($(this).children('a').css('margin-left').replace("px", ""))
                 },
                 offset = (parentLiDropdownWidth - menuLinkProps.width) / 2 - menuLinkProps.marginLeft;
+            
+            console.log("parentLiDropdownWidth: " + parentLiDropdownWidth);
+            console.log("menuLinkWidth: " + menuLinkWidth);
+            console.log("offset: " + offset);
 
             $(this).children('.sub-menu').slideDown(200).css('left', offset);
+
+        },
+            function () {
+                $(this).children('.sub-menu').slideUp(200);
+            });
+        
+        
+        $('.dropdown .second-level').hover(function () {
+            var offset = $(this).parents('ul').width();
+            
+//            console.log("other function");
+//            console.log("parentLiDropdownWidth: " + parentLiDropdownWidth);
+//            console.log("menuLinkWidth: " + menuLinkWidth);
+//            console.log("offset: " + offset);
+
+            $(this).children('.sub-menu').slideDown(200).css('left', offset - 6);
 
         },
             function () {
