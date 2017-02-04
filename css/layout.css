@@ -196,23 +196,45 @@ header.page-main-header {
     margin-bottom: 10px;
 }
 
-.intro-content {
-/*	display: inline-block;*/
+.intro-content-container {
     width: 100%;
+    display: table;
+}
+.intro-content {
+    width: 75%;
+    display: table-cell;
 }
 
 .intro-content p {
-    width: 60%;
+    width: 83%;
     display: inline-block;
+    float: left;
 }
 
 .intro-content section {
 	float: left;
 }
 
-.intro-content figure {
-	float: right;
-	margin-right: 0px;
+.intro-content-image-container {
+/*    max-height: 100%;*/
+    display: table-cell;
+    width: 25%;
+}
+
+.float-div {
+    display: table-cell;
+}
+.foo {
+    background-image: url(../img/sobriety-this-way.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    display: table-cell;
+/*    float: right;*/
+}
+.intro-content-image{
+    width: 200px;
+    float: right;
 }
 
 .phone-number, .top-content {
