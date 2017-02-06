@@ -613,6 +613,19 @@ footer {
 .general-page-content {
     width: 50%;
     padding-left: 50px;
+    display: inline-block;
+}
+
+.general-page-content-image-large {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    width: 530px;    
+    float: right;
+}
+
+.general-page-content-image-large-finding-treatment {
+    background-image: url(../img/finding-treatment-doctor.jpg);
 }
 
 .general-page-header {
