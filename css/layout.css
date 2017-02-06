@@ -432,14 +432,23 @@ footer {
     height: inherit;
 }
 
+.three-panel-section-image-container {
+    width: auto;
+    text-align: center;
+}
+
 .three-panel-section-image {
-    display: block;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+/*    height: 350px;*/
+    width: 530px;
+    display: inline-block;
 }
 
 .three-panel-section-qual-of-life {
-    background-image: url('../img/quality-of-life.png');
+    background-image: url('../img/rehabilitation-heart-530x295.jpg');
+    height: 400px;
 }
 
 .three-panel-section-treatment {
@@ -447,7 +456,8 @@ footer {
 }
 
 .three-panel-section-friends-family {
-    background-image: url('../img/family-ties.png');
+    background-image: url('../img/family-huddle-530x295.jpg');
+    height: 400px;
 }
 
 .three-panel-section-title {
