@@ -675,3 +675,45 @@ a.link-button-services:hover {
     font-size: 14pt;
     color: #666;
 }
+
+.lead-text {
+    font-family: calibri;
+    font-size: 20pt;
+}
+
+.lead-paragraph {
+    width: 60%;
+    padding-left: 50px;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.lead-image-main {
+    float: right;    
+/*    height: 400px;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+/*    height: 350px;*/
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+}
+
+#leadImageMainPrescriptionDrugAddiction {
+    background-image: url('../img/family-huddle-530x295.jpg');
+}
+
+.three-panel-section-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+/*    height: 350px;*/
+    width: 530px;
+    display: inline-block;
+}
+
+div.lead {
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
