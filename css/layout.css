@@ -684,7 +684,7 @@ a.link-button-services:hover {
 
 
 .lead-paragraph {
-    width: 60%;
+    width: 58%;
     padding-left: 50px;
     display: inline-block;
     margin-top: 0px;
@@ -702,8 +702,25 @@ a.link-button-services:hover {
     display: inline-block;
 }
 
+.lead-image-main-prescription-drugs {
+    float: right;
+    padding-top: 10px;
+/*    height: 400px;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+/*    height: 350px;*/
+    width: 530px;
+    height: 400px;
+    display: inline-block;
+}
+
 #leadImageMainPrescriptionDrugAddiction {
-    background-image: url('../img/family-huddle-530x295.jpg');
+    background-image: url(../img/prescription-drugs-530x340.jpg);
+}
+
+#leadImageMainMarijuanaAddiction {
+    background-image: url(../img/prescription-drugs-530x295.jpg);
 }
 
 .three-panel-section-image {
