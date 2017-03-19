@@ -678,13 +678,13 @@ a.link-button-services:hover {
 
 .lead-text {
     font-family: calibri;
-    font-size: 20pt;
+    font-size: 18pt;
 }
 
 
 
 .lead-paragraph {
-    width: 58%;
+    width: 52%;
     padding-left: 50px;
     display: inline-block;
     margin-top: 0px;
@@ -704,7 +704,7 @@ a.link-button-services:hover {
 
 .lead-image-main-prescription-drugs {
     float: right;
-    padding-top: 10px;
+    margin-top: 7px;
 /*    height: 400px;*/
     background-repeat: no-repeat;
     background-size: contain;
